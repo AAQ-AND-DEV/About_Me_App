@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">About Me Application 2</string>
+    <string name="name_text">Aaron Quaday</string>
+    <string name="yellow_star">Yellow Star</string>
+    <string name="bio_text">Indeed, nary was there a man who could \nbe called upon to do so little, and yet \nactualize so little much less than that. \n\n<b>Probably there was something that could \nhave been done to change his fate.</b>\n\nNonetheless he persevered, in the hopes\nthat some day, a miracle would transpire\nto transform him from a rather under-\nachieving boo into a resolute master of\ncircumstances, both his and the world\'s.\n\n<i>Be so bold as to cast a glance upon the\nWorld\'s poorest, and be not relieved by\nyour relative wealth, but chastised by\nthe disparity between those with so much\nwhen so many have so little.</i>\n\nThis is a scrollview, so I should type \nenough to extend beyond the edge,\nboth of the screen and the comfort zone.</string>
+    <string name="done_label">Done</string>
+    <string name="nickname_prompt">What is your nickname?</string>
+</resources>
