@@ -10,6 +10,7 @@ import android.view.inputmethod.InputMethodManager
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
+import android.widget.Toast
 import com.aaqanddev.aboutmeapplication2.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -18,10 +19,14 @@ class MainActivity : AppCompatActivity() {
     private lateinit var nickTextView: TextView
     private lateinit var doneButton: Button
     private lateinit var binding: ActivityMainBinding
+    private val myName: MyName = MyName("Aaron Quaday")
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = DataBindingUtil.setContentView(this, R.layout.activity_main)
+
+        //set data in layout with myName var
+        binding.myName = myName
 
         //set binding variables for views
         doneButton = binding.buttonDone
@@ -41,8 +46,15 @@ class MainActivity : AppCompatActivity() {
         doneButton.setOnClickListener {
             val nick = editText.text.toString()
             if (nick!=""){
-                nickTextView.text = nick
+                
+                binding.apply{
+                    //setting value of nickname in myName object to content of ET
+                    myName?.nickname = nick
+                    invalidateAll()
+                }
                 updateViews()
+            } else {
+              Toast.makeText(this, getString(R.string.missing_nick_prompt), Toast.LENGTH_SHORT).show()
             }
             val inputMethodManager = getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager
             inputMethodManager.hideSoftInputFromWindow(it.windowToken, 0)

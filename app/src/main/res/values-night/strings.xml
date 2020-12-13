@@ -5,4 +5,5 @@
     <string name="bio_text">Indeed, nary was there a man who could \nbe called upon to do so little, and yet \nactualize so little much less than that. \n\nProbably there was something that could \nhave been done to change his fate.\n\nNonetheless he persevered, in the hopes\nthat some day, a miracle would transpire\nto transform him from a rather under-\nachieving boo into a resolute master of\ncircumstances, both his and the world\'s.\n\nBe so bold as to cast a glance upon the\nWorld\'s poorest, and be not relieved by\nyour relative wealth, but chastised by\nthe disparity between those with so much\nwhen so many have so little.\n\nThis is a scrollview, so I should type \nenough to extend beyond the edge,\nboth of the screen and the comfort zone.</string>
     <string name="done_label">Done</string>
     <string name="nickname_prompt">What is your nickname?</string>
+    <string name="missing_nick_prompt">Please enter a nickname</string>
 </resources>
